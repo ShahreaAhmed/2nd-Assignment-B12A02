@@ -211,9 +211,7 @@ img {
     margin-left: -190px;
     filter: drop-shadow(-4px 10px 2px rgba(0, 0, 0, 0.25));
 }
-.image-trsted-badge{
 
-}
 
 /* Mobile Device Responsiveness */
 @media screen and (max-width:576px) {
@@ -275,7 +273,6 @@ img {
 }
     .product-card-section {
         grid-template-columns: repeat(2, 1fr);
-        /* margin: 0 auto; */
         justify-items: center;
         gap: 0px;
     }
@@ -301,6 +298,43 @@ img {
         font-weight: 600;
         padding: 16px 29px 30px 29px;
     }
+
+    /* plants and flower lover section */
+
+    .plants-lover-section{
+        display: block;
+    }
+    .plant-lover-image{
+        max-width: 361px;
+        margin: 0 auto;
+    }
+    .plants-lover{
+        max-width: 361px;
+        margin: 0 auto;
+    }
+    .plant-lover-title{
+        font-size: 1.5rem;
+        margin-top: 18px;
+    }
+    .trusted-badge{
+        display: none;
+    }
+    .desktop-break{
+        display: none;
+    }
+    .plant-lover-description{
+        font-size: 0.875rem;
+        margin-top: 16px;
+    }
+    /* .plants-lover{
+        margin-left: 0px;
+    } */
+     .unorder-list{
+        padding-left: 21px;
+        max-width: 361px;
+        
+     }
+
 
 
 }
