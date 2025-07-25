@@ -1,110 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.inter-font{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
-.noto-serif-font{
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+.noto-serif-font {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
-.navbar-section{
+.navbar-section {
     display: flex;
 }
 
 
 /* shared style */
-.display-flex{
+.display-flex {
     display: flex;
 }
-.span-color{
+
+.span-color {
     color: #E95A08;
 }
 
 /* header style */
 
 /* navber related style */
-.navbar-section{
+.navbar-section {
     justify-content: space-between;
 }
-.nav-list{
+
+.nav-list {
     list-style: none;
     margin-right: 48px;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
 }
-.menu{
+
+.menu {
     align-items: center;
     margin: 0 auto;
 }
-.menu-items, .nav-link, .banner{
+
+.menu-items,
+.nav-link,
+.banner {
     align-items: center;
 }
 
-.navbar-section, .banner{
+.navbar-section,
+.banner {
     max-width: 1140px;
     margin: 0 auto;
 }
-.shopping-cart{
+
+.shopping-cart {
     width: 45px;
     height: 45px;
 }
-.cart-icon-and-tab{
+
+.cart-icon-and-tab {
     margin-right: 0px;
     list-style: none;
 }
-.home-tab{
+
+.home-tab {
     font-size: 1rem;
     font-weight: bold;
     color: #252432;
 }
-.shop-and-about-tab{
+
+.shop-and-about-tab {
     font-size: 1rem;
     font-weight: 400;
     color: #8987A1;
 }
-.cart-tab{
+
+.cart-tab {
     font-size: 1rem;
     font-weight: 400;
     color: #000000;
 }
-.banner{
+
+.banner {
     margin-top: 120px;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4.06rem;
     font-weight: bold;
     margin-bottom: 0px;
 }
-.banner-description{
+
+.banner-description {
     color: rgba(0, 0, 0, 0.5);
     font-size: 1.37rem;
     font-weight: 400;
     margin-top: 13px;
     margin-bottom: 0px;
 }
+
 /* Plants section style/main */
 /* .main-content-section{
     max-width: 1140px;
     margin: 0 auto;
 } */
-.plants-title-description{
+.plants-title-description {
     margin: 0 auto;
     text-align: center;
 }
-.plants-title{
+
+.plants-title {
     font-size: 3.125rem;
     font-weight: bold;
     margin-top: 120px;
     margin-bottom: 16px;
 }
-.plants-description{
+
+.plants-description {
     color: rgba(0, 0, 0, 0.5);
     font-size: 1.375rem;
     font-weight: 400;
@@ -114,51 +133,174 @@
     margin: 0 auto;
 }
 
-
-
-/* Mobile Device Responsiveness */
-@media screen and (max-width:576px){
-    .home-tab,
-    .shop-and-about-tab{
-        display: none;
-    }
-    .banner{
-        grid-template-columns: repeat(1 1fr);
-        flex-direction: column-reverse;   
-    }
-    .navbar{
-        max-width: 361px;
-        margin: 0 auto;
-    }
-    .banner img{
-        width: 100%;
-    }  
-    .banner{
-        margin-top: 28px;    
-    }
-    .banner-title{
-    font-size: 2rem;
-    margin-top: 28px;
-    
+.product-card-section {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
-    .banner-description{
-    font-size: 0.875rem;
+
+img {
     margin-bottom: 0px;
 }
-.banner-content{
-    max-width: 361px;
+
+.product-card-margin {
+    margin-top: 49px;
 }
-/* plants section responsive */
-.plants-title{
-    font-size: 1.5rem;
-    margin-top: 65px;
+
+.product-title {
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.product-price {
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+    background-color: #E95A08;
+    width: 270px;
+    height: 50px;
+    padding: 12px 50px 12px 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0px;
+    border: none;
+    margin-top: 30px;
+}
+/* Plants Lover Section */
+.plants-lover-section{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 210px;
+    gap: 0px;
+}
+.plant-lover-image{
+    margin-bottom: 0px;
+}
+.plants-lover{
+    max-width: 540px;
+    margin-left: -20px;
+}
+.plant-lover-title{
+    color: #000000;
+    font-size: 3.125rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+.plant-lover-description{
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    font-size: 1.375rem;
+    font-weight: 400;
+}
+.trusted-badge{
+    max-width: 286px;
+    max-height: 286px;
+    margin-top: -125px;
+    margin-left: -190px;
+    filter: drop-shadow(-4px 10px 2px rgba(0, 0, 0, 0.25));
+}
+.image-trsted-badge{
 
 }
-.plants-description{
-    font-size: 0.875rem;
-    max-width: 336px;
 
+/* Mobile Device Responsiveness */
+@media screen and (max-width:576px) {
+
+    .home-tab,
+    .shop-and-about-tab {
+        display: none;
+    }
+
+    .banner {
+        grid-template-columns: repeat(1 1fr);
+        flex-direction: column-reverse;
+    }
+
+    .navbar {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .banner {
+        margin-top: 28px;
+    }
+    .navbar-tab{
+        display: block;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+        margin-top: 28px;
+    }
+
+    .banner-description {
+        font-size: 0.875rem;
+        margin-bottom: 0px;
+    }
+
+    .banner-content {
+        max-width: 361px;
+    }
+
+    /* plants section responsive */
+    .plants-title {
+        font-size: 1.5rem;
+        margin-top: 65px;
+
+    }
+
+    .plants-description {
+        font-size: 0.875rem;
+        max-width: 336px;
+    }
+/* product card style */
+.card{
+    max-width: 171px;
 }
+    .product-card-section {
+        grid-template-columns: repeat(2, 1fr);
+        /* margin: 0 auto; */
+        justify-items: center;
+        gap: 0px;
+    }
+    .product-card-margin{
+        margin-top: 28px;
+        column-gap: 6px;
+        row-gap: 25px;
+        
+    }
+    .product-title{
+        margin-top: 28px;
+        margin-bottom: 0px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .product-price{
+        margin-top: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .btn-primary{
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 16px 29px 30px 29px;
+    }
 
 
 }
